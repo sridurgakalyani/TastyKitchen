@@ -1,0 +1,112 @@
+.ListItem {
+  display: flex;
+  align-items: center;
+  width: 330px;
+  height: 180px;
+  margin-bottom: 6px;
+  justify-content: flex-start;
+  margin-right: 6px;
+  padding-right: 3px;
+  margin-left: 0;
+}
+.ListItem .RestaurantImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  margin-right: 7px;
+}
+.ListItem .ItemDetails {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-left: 8px;
+  min-height: 150px;
+}
+.ListItem .ItemDetails .ItemName {
+  font-size: 16px;
+  color: #334155;
+  font-weight: 700;
+  font-family: DM sans;
+  font-style: normal;
+  font-family: DM Sans;
+  line-height: 20px;
+  letter-spacing: 0.200000000298023224px;
+  text-align: left;
+}
+.ListItem .ItemDetails .ItemCost {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 10px;
+  color: #334155;
+  text-align: center;
+}
+.ItemDetails .ItemRatingContainer {
+  display: flex;
+  align-items: center;
+  width: 40px;
+  justify-content: space-between;
+  height: fit-content;
+}
+.ItemDetails .ItemRatingContainer .ItemStar {
+  height: 14px;
+  width: 14px;
+  color: #ffcc00;
+}
+.ItemDetails .ItemRatingContainer .ItemRatingText {
+  height: 18px;
+  width: 22px;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.ItemDetails .AddButton {
+  position: static;
+  width: 50px;
+  height: 25px;
+
+  /* Action / Button / Small */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  /* or 133% */
+  color: #ffa412;
+  border: 1px solid #ffa412;
+  border-radius: 5px;
+}
+.ItemDetails .ItemRateContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.ItemRupee {
+  height: 16px;
+  width: 16px;
+  border-radius: 0px;
+}
+@media screen and (min-width: 767px) {
+  .ListItem {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 220px;
+  }
+  .ListItem .RestaurantImage {
+    width: 200px;
+    height: 150px;
+    border-radius: 8px;
+    margin-right: 7px;
+  }
+}

@@ -1,0 +1,100 @@
+.footer-container {
+  background-color: #0f172a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 40px;
+  width: 100vw;
+  height: 170px;
+}
+.main-heading {
+  font-family: DM Sans;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #ffffff;
+}
+.paragraph {
+  border-radius: nullpx;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #ffffff;
+}
+.contacts {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+.logos {
+  height: 25px;
+  width: 19.5px;
+  left: 2px;
+  top: 0px;
+  border-radius: nullpx;
+  font-family: Font Awesome 5 Brands;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #ffffff;
+}
+.log-heading {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 35px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contacts {
+    width: 30%;
+  }
+  .main-heading {
+    border-radius: nullpx;
+    font-family: DM Sans;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 32px;
+  }
+  .paragraph {
+    font-family: DM Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  .logos {
+    height: 40px;
+    width: 40px;
+    left: 4px;
+    top: 4px;
+    border-radius: 0px;
+    color: #ffffff;
+  }
+  .footer-image {
+    display: none;
+  }
+}

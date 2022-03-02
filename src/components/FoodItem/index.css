@@ -1,0 +1,52 @@
+/* Counter*/
+
+.each-item-counter-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4px;
+  width: fit-content;
+}
+
+.minus-icon {
+  border: 1px solid #334155;
+  padding: 2px;
+  color: #334155;
+  height: 12px;
+  width: 12px;
+}
+.count-value {
+  font-size: 8px;
+  color: #334155;
+  background-color: transparent;
+  border: none;
+}
+.plus-icon {
+  border: 1px solid #334155;
+  padding: 2px;
+  color: #334155;
+  height: 12px;
+  width: 12px;
+}
+.minus-icon-container {
+  border: none;
+  background-color: transparent;
+}
+.plus-icon-container {
+  border: none;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .minus-icon {
+    font-size: 16px;
+  }
+  .plus-icon {
+    font-size: 16px;
+  }
+  .count-value {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}

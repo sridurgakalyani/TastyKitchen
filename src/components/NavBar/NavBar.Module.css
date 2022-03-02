@@ -1,0 +1,137 @@
+.NavBar {
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  background: #f8fafc;
+  position: fixed;
+  top: 0;
+  opacity: 1;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 9px;
+  width: 100%;
+  z-index: 1;
+  border-bottom: 1px solid #ccc;
+  width: 100vw;
+}
+.NavBar .LogoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.NavBar .LogoContainer .LogoImage {
+  width: 45px;
+  height: 40px;
+  margin-right: 6px;
+}
+.NavBar nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+.NavBar nav ul li {
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 1vw;
+  margin-top: 3px;
+  color: #334155;
+  font-family: DM Sans;
+  font-weight: 600;
+  font-style: italic;
+}
+.LogoutButton {
+  height: 32px;
+  width: 73px;
+  left: 0px;
+  top: 0px;
+  border-radius: 8px;
+  padding: 8px, 16px, 8px, 16px;
+  background: #f7931e;
+  border: none;
+  color: #ffffff;
+  font-family: DM Sans;
+  font-weight: 600;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.NavBar .MainHeading {
+  font-family: DM Sans;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 900;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #f7931e;
+  text-decoration: none;
+}
+
+.NavBar .MobileNavigation {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .NavBar .Navigation {
+    display: none;
+  }
+  .NavBar .MobileNavigation {
+    display: flex;
+    align-items: center;
+    position: absolute right;
+    z-index: 1;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    left: 0;
+    top: 0;
+  }
+  .NavBar .MobileNavigation .Hamburger {
+    position: absolute;
+    right: 3%;
+    cursor: pointer;
+  }
+
+  .NavBar nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 50%;
+    min-height: 100vh;
+    background: #f8fafc;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding-bottom: 6px;
+    transition: width 0.5s;
+    -moz-box-shadow: 1px 1px 5px 2px #ccc;
+    -webkit-box-shadow: 1px 1px 5px 2px #ccc;
+    box-shadow: 1px 1px 5px 2px #ccc;
+    border-top-left-radius: 5px;
+  }
+  .NavBar nav ul li {
+    font-size: 20px;
+    text-decoration: none;
+    padding-left: 25px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    font-weight: 500;
+  }
+  .NavBar {
+    opacity: 1;
+  }
+  .NavBar a:hover {
+    border-bottom: none;
+    color: green;
+  }
+}
+@media screen and (min-width: 750px) {
+  .NavBar {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}

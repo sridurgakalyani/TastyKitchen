@@ -1,0 +1,77 @@
+.ListItem {
+  display: flex;
+  align-items: center;
+  width: 350px;
+  height: 150px;
+  margin-bottom: 6px;
+  justify-content: flex-start;
+  margin-right: 6px;
+  padding-right: 3px;
+  margin-left: 0;
+}
+.ListItem .RestaurantImage {
+  width: 140px;
+  height: 130px;
+  border-radius: 8px;
+  margin-right: 7px;
+}
+
+.ListItem .RestaurantDetails {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.RestaurantDetails .Name {
+  font-size: 16px;
+  color: #334155;
+  font-weight: 700;
+  font-family: DM sans;
+  font-style: normal;
+  font-family: DM Sans;
+  line-height: 20px;
+  letter-spacing: 0.200000000298023224px;
+  text-align: left;
+}
+.RestaurantDetails .Cuisine {
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+  color: #64748b;
+  line-height: 20px;
+}
+
+.RestaurantDetails .RatingsContainer {
+  display: flex;
+  align-items: center;
+  width: 140px;
+  justify-content: space-between;
+}
+
+.RestaurantDetails .RatingsContainer .Rating {
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #1e293b;
+}
+
+.RestaurantDetails .RatingsContainer .Reviews {
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #64748b;
+}

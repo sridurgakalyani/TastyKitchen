@@ -1,0 +1,53 @@
+.counter-class {
+  display: flex;
+  width: 130px;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  align-items: center;
+}
+.btn {
+  background-color: transparent;
+  border: 1px solid;
+  text-align: center;
+  height: 25px;
+}
+
+.icon-class {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.pages-class {
+  height: 24px;
+  font-family: Bree Serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #334155;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+@media screen and (min-width: 750px) {
+  .counter-class {
+    width: 140px;
+  }
+  .btn {
+    background-color: transparent;
+    border: 1px solid;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+  }
+  .icon-class {
+    font-size: 15px;
+  }
+
+  .pages-class {
+    font-size: 19px;
+  }
+}

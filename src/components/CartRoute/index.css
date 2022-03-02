@@ -1,0 +1,59 @@
+/* Counter*/
+
+.each-item-counter-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 4px;
+  height: 30px;
+  width: 60px;
+}
+
+.minus-icon {
+  border: 1px solid #334155;
+  padding: 2px;
+  color: #334155;
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+}
+.count-value {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: 8px;
+  margin-right: 8px;
+  color: #334155;
+  font-weight: 500;
+}
+.plus-icon {
+  border: 1px solid #334155;
+  padding: 2px;
+  color: #334155;
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+}
+.minus-icon-container {
+  border: none;
+  background-color: transparent;
+}
+.plus-icon-container {
+  border: none;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .each-item-counter-container {
+    width: auto;
+  }
+  .minus-icon {
+    font-size: 16px;
+  }
+  .plus-icon {
+    font-size: 16px;
+  }
+  .count-value {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}

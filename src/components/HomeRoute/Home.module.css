@@ -1,0 +1,355 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.HomeContainer {
+  padding-top: 76px;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.HomeContainer .MainContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.HomeContainer .SliderContainer {
+  margin-top: 6px;
+  padding: 0px;
+  margin-bottom: 16px;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.HomeContainer .SliderContainer .CarouselImage {
+  height: 150px;
+}
+.Loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.HomeContainer .MainContainer .popularRestaurantsContainer {
+  width: 100%;
+  margin-left: 6px;
+  margin-right: 6px;
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.HomeContainer .MainContainer .popularRestaurantsContainer .HeadingContainer {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+.HeadingContainer .MainHeading {
+  font-family: DM Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #183b56;
+}
+
+.HeadingContainer .MainParagraph {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+
+  /* or 200% */
+
+  /* Light / blue-gray / 500 */
+
+  color: #64748b;
+}
+
+.popularRestaurantsContainer .FilterContainer {
+  display: flex;
+  width: 180px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: fit-content;
+}
+
+.popularRestaurantsContainer .FilterContainer .FilterLogo {
+  height: 45px;
+  width: 35px;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+  color: #475569;
+}
+
+.popularRestaurantsContainer .FilterContainer .SortLabel {
+  margin-left: 6px;
+  border-radius: nullpx;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #475569;
+}
+
+.popularRestaurantsContainer .FilterContainer .SelectElement {
+  color: #475569;
+  min-width: 80px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: DM Sans;
+  border: none;
+  background-color: transparent;
+}
+hr {
+  display: none;
+}
+
+.popularRestaurantsContainer .SearchInputContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.SearchInputContainer .SearchLabel {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #475569;
+}
+
+.SearchInputContainer .SearchElement {
+  height: 30px;
+  background-color: #e3ececec;
+  border: 1px solid;
+  margin-top: 7px;
+  border-radius: 6px;
+  color: #ada0df;
+}
+
+.MainContainer .RestaurantList {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.NoResContainer {
+  width: 100%;
+  height: 100px;
+  padding-left: 26px;
+}
+.NoResContainer .NoResPara {
+  font-family: DM Sans;
+  font-size: 16px;
+  color: #475569;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 767px) {
+  .HomeContainer {
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+  }
+  .HomeContainer .SliderContainer {
+    margin-top: 16px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .HomeContainer .MainContainer {
+    height: 100%;
+    width: 95%;
+    align-items: center;
+  }
+  .HomeContainer .SliderContainer .CarouselImage {
+    height: auto;
+  }
+  .HomeContainer .MainContainer .popularRestaurantsContainer {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: 0px;
+    margin-right: 0px;
+    align-self: flex-start;
+  }
+  .HomeContainer .MainContainer .popularRestaurantsContainer .HeadingContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 26px;
+    justify-content: center;
+    height: fit-content;
+  }
+
+  .popularRestaurantsContainer .FilterContainer {
+    width: 250px;
+    margin-bottom: 8px;
+  }
+  .popularRestaurantsContainer .FilterContainer .FilterLogo {
+    width: 40px;
+    height: 40px;
+  }
+  .popularRestaurantsContainer .FilterContainer .SortLabel {
+    font-size: 17px;
+  }
+  .popularRestaurantsContainer .FilterContainer .SelectElement {
+    color: #475569;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: DM Sans;
+    border: none;
+  }
+  hr {
+    display: block;
+    width: 100%;
+    border: 1px solid #cbd2d9;
+    color: #183b56;
+  }
+
+  .popularRestaurantsContainer .SearchInputContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+    justify-content: space-between;
+    width: 300px;
+    margin-bottom: 8px;
+  }
+  .NoResContainer .NoResPara {
+    font-family: DM Sans;
+    font-size: 35px;
+    color: #475569;
+    font-weight: 600;
+  }
+  .NoResContainer {
+    width: 100%;
+    height: 200px;
+    padding-left: 10px;
+  }
+}
+@media screen and (min-width: 660px) {
+  .popularRestaurantsContainer .SearchInputContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 400px;
+  }
+  .SearchInputContainer .SearchElement {
+    height: 30px;
+    background-color: #e3ececec;
+    border: 1px solid;
+    margin-top: 7px;
+    border-radius: 6px;
+    color: #ada0df;
+    width: 200px;
+  }
+  .NoResContainer .NoResPara {
+    font-family: DM Sans;
+    font-size: 19px;
+    color: #475569;
+    font-weight: 600;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .HeadingContainer .MainHeading {
+    font-family: DM Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    box-sizing: content-box;
+    height: 35px;
+    width: auto;
+    margin-bottom: 3px;
+    text-align: left;
+  }
+  .HeadingContainer .MainParagraph {
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    box-sizing: content-box;
+    text-align: left;
+    height: 35px;
+    height: fit-content;
+  }
+  .MainContainer .RestaurantList {
+    list-style-type: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .popularRestaurantsContainer .SearchInputContainer {
+    width: 470px;
+    justify-content: center;
+    align-items: center;
+  }
+  .SearchInputContainer .SearchLabel {
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: left;
+    color: #475569;
+    margin-top: 4px;
+    text-align: left;
+  }
+  .SearchInputContainer .SearchElement {
+    height: 30px;
+    padding: 1px;
+    background-color: #e3ececec;
+    border: 1px solid;
+    margin-top: 7px;
+    border-radius: 6px;
+    color: #ada0df;
+    width: 250px;
+  }
+  .HeadingContainer .MainParagraph {
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    box-sizing: content-box;
+    text-align: left;
+    height: 35px;
+    height: fit-content;
+  }
+  .MainContainer .RestaurantList {
+    list-style-type: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .popularRestaurantsContainer .SearchInputContainer {
+    width: 470px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

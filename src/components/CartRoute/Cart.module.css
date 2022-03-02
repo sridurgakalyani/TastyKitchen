@@ -1,0 +1,386 @@
+.CartBackgroundContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+.CartBackgroundContainer .CartEmptyViewContainer {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.CartEmptyViewContainer .CartEmptyImage {
+  width: 300px;
+}
+.CartEmptyViewContainer .CartEmptyName {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 25px;
+  text-align: center;
+  color: #1e293b;
+}
+.CartEmptyViewContainer .CartEmptyDescription {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #64748b;
+}
+.CartEmptyViewContainer .OrderNowButton {
+  position: static;
+  background: #f7931e;
+  border-radius: 8px;
+  position: static;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  border: none;
+  color: #ffffff;
+  height: 32px;
+  width: 85px;
+}
+
+/* breakPoint */
+
+@media screen and (min-width: 767px) {
+  .CartEmptyViewContainer .CartEmptyImage {
+    width: 350px;
+  }
+  .CartEmptyViewContainer .CartEmptyName {
+    font-size: 32px;
+  }
+  .CartEmptyViewContainer .CartEmptyDescription {
+    font-size: 18px;
+  }
+}
+
+/* cart success view */
+
+.CartBackgroundContainer .CartSuccessContainer {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.CartSuccessContainer .CartCircle {
+  color: #22c55e;
+  height: 38px;
+  width: 38px;
+}
+.CartSuccessContainer .CartSuccessName {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 20px;
+  text-align: center;
+  color: #1e293b;
+}
+.CartSuccessContainer .CartSuccessDescription {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #64748b;
+}
+.CartSuccessContainer .GotoHomeButton {
+  position: static;
+  background: #f7931e;
+  border-radius: 8px;
+  position: static;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  border: none;
+  color: #ffffff;
+  height: 32px;
+  width: auto;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+/* break point */
+
+@media screen and (min-width: 767px) {
+  .CartSuccessContainer .CartCircle {
+    height: 40px;
+    width: 40px;
+  }
+  .CartSuccessContainer .CartSuccessName {
+    font-size: 32px;
+  }
+  .CartSuccessContainer .CartSuccessDescription {
+    font-size: 18px;
+  }
+}
+
+/* cart Items view */
+
+.CartBackgroundContainer.CartContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: inherit;
+}
+.CartContainer .CartItemsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  min-height: 100vh;
+}
+.CartItemsContainer .HorizontalLine {
+  border: 1px dashed red;
+  width: 95%;
+}
+
+.DesktopHeadingContainer {
+  display: none;
+}
+
+.CartItemsContainer .MobileCartItemsList {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  list-style-type: none;
+}
+.CartItemsContainer .TotalContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+  align-items: center;
+  padding: 12px;
+}
+.TotalContainer .OrderHeading {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 24px;
+  color: #3e4c59;
+}
+.TotalContainer .TotalAmountContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.TotalAmountContainer .TotalRupee {
+  height: 18px;
+  width: 18px;
+  border-radius: 0px;
+  color: #3e4c59;
+}
+.TotalAmountContainer .TotalAmount {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  text-align: right;
+}
+
+.CartItemsContainer .PlaceOrderButton {
+  position: static;
+  background: #f7931e;
+  border-radius: 8px;
+  position: static;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  border: none;
+  color: #ffffff;
+  height: 35px;
+  padding-left: 6px;
+  padding-right: 6px;
+  width: 100px;
+  align-self: flex-end;
+  margin-bottom: 16px;
+}
+
+/* break point */
+
+@media screen and (min-width: 767px) {
+  .CartBackgroundContainer {
+    justify-content: space-between;
+  }
+  .CartBackgroundContainer .CartContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  .CartContainer .CartItemsContainer {
+    width: 80%;
+    background-color: #f9fbfe;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
+    border: 1px solid rgba(11, 105, 255, 0.1);
+    margin-top: 64px;
+    margin-bottom: 64px;
+  }
+
+  .CartItemsContainer .DesktopHeadingContainer {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+  }
+  .DesktopHeadingContainer .Headings {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #475569;
+  }
+  .CartItemsContainer .PlaceOrderButton {
+    margin-right: 62px;
+  }
+  .CartItemsContainer .TotalContainer {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+  .TotalAmountContainer .TotalRupee {
+    height: 22px;
+    width: 22px;
+  }
+  .TotalAmountContainer .TotalAmount {
+    font-size: 19px;
+    text-align: center;
+  }
+}
+
+/* cart individual Item */
+
+.MobileCartItemsList .CartListItem {
+  display: flex;
+  width: 95%;
+  height: 140px;
+  margin-left: 6px;
+  margin-right: 6px;
+  margin-bottom: 6px;
+
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 8px;
+}
+.CartListItem .ItemImage {
+  width: 136px;
+  height: 130px;
+  border-radius: 8px;
+}
+.CartListItem .CartNameDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  height: 130px;
+  margin-left: 8px;
+}
+.CartNameDetailsContainer .CartItemName {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #183b56;
+}
+.CartNameDetailsContainer .ItemRateContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.ItemRateContainer .ItemRupee {
+  height: 16px;
+  width: 16px;
+  border-radius: 0px;
+  color: #ffa412;
+}
+.ItemRateContainer .ItemCost {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  color: #ffa412;
+}
+@media screen and (min-width: 767px) {
+  .MobileCartItemsList .CartListItem {
+    display: flex;
+    width: 90%;
+    height: 140px;
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 8px;
+  }
+
+  .CartListItem .CartNameDetailsContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-left: 10px;
+  }
+  .CartNameDetailsContainer .CartItemName {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #183b56;
+    width: 50px;
+  }
+  .ItemRateContainer .ItemCost {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    color: #ffa412;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .CartListItem .CartNameDetailsContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-left: 10px;
+  }
+}
